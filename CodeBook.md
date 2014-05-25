@@ -56,12 +56,20 @@ Features are normalized and bounded within [-1,1].
 Summary of process followed in run_analysis
 -------------------------------------------
 
-    *Column bind all the test data: x,y subject to get `testdata`
-    *Column bind all the train data: x,y subject to get `traindata`
-    *Row binded the above data `fulldata`
-    *Merge this data with activity_labels data to get a complete dataset with every activity and renaming column names of this complete dataset with the help of features dataset. The complete dataset is called `afulldata`
-    *Creating a dataset `reddata` having only mean and std features with `ActivityID`,`ActivityName` and `SubjectID`
-    *Creating required tidy dataset `acntdata` with the necessary processing
-    *Writing the necessary tables :
-        >`afulldata` in `Complete_data.txt` and `Complete_data.csv` 
-        >`acntdata`  in `tidy_data.txt` and `tidy_data.csv`
+  *Column bind all the test data: x,y subject to get `testdata`
+  
+  *Column bind all the train data: x,y subject to get `traindata`
+
+  *Row binded the above data `fulldata`
+
+  *Merge this data with activity_labels data to get a complete dataset with every activity and renaming column names of this complete dataset with the help of features dataset. The complete dataset is called `afulldata`
+  
+  *Creating a dataset `reddata` having only mean and std features with `ActivityID`,`ActivityName` and `SubjectID`
+  
+  *Creating required tidy dataset `acntdata` with the necessary processing so as to get the average of each variable for each activity and each subject. 
+  
+  *Writing the necessary tables :
+      
+      >`afulldata` in `Complete_data.txt` and `Complete_data.csv` 
+      
+      >`acntdata`  in `tidy_data.txt` and `tidy_data.csv`
